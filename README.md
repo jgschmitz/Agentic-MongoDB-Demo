@@ -59,3 +59,26 @@ async def chat(request: ChatRequest = Body(...)):  # Now it forces a JSON body
 
     return {"response": ai_response}
 ```
+
+Lets run the API
+```
+uvicorn main:app --reload
+```
+Now that its running to test the API in the browswer
+```
+Browser (Swagger UI) Go to:
+📍 http://127.0.0.1:8000/docs (Interactive API docs)
+```
+or you can use cURL from CLI
+```
+curl -X 'POST' \
+  'http://127.0.0.1:8000/chat/' \
+  -H 'Content-Type: application/json' \
+  -d '{"user_id": "123", "message": "Hello, how are you?"}'
+```
+You should get a response something like this
+```
+{"response":"Hello! As an AI, I have the ability to perform various functions, based on my programming. Here are some of the things I can do:\n\n1. Informing: I can provide news, weather updates, sports scores, and more. \n2. Answering Questions: I can provide information on a wide range of topics based on my programming and learning algorithms.\n3. Setting Reminders and Alarms: I can help you manage your schedule and could remind you of important tasks.\n4. Language Processing: I can understand and respond in several languages.\n5. Assisting with Certain Tasks: Depending upon my programming, I may be able to assist with tasks such as booking appointments, sending messages, making reservations, or translating languages in real-time.\n6. Learning and Adapting: Depending on my design, I may have the ability to learn from interactions and improve my responses over time.\n7. Providing Entertainment: Some AIs can tell jokes, recommend movies or music, or even play games with you.\n\nIt's important to note that not every AI will be able to perform all these tasks—it depends on how they have been designed and programmed."
+```
+go and check your mongodb Agentic_Demo.conversations - all the answers will be stored in there!
+have fun! 🍺
