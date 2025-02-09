@@ -3,10 +3,10 @@ FastAPI + OpenAI + MongoDB setup forms the foundation of an agentic system, but 
 
 An agentic system is one that:
 
-Stores Memory 🧠 → Your setup saves chat history in MongoDB.
-Retrieves Context 🔍 → It can recall past conversations per user.
-Makes Decisions 🧩 → OpenAI processes messages and generates responses dynamically.
-Acts Autonomously 🤖 → The system functions on its own without direct control.
+Stores Memory 🧠 → Your setup saves chat history in MongoDB.<br>
+Retrieves Context 🔍 → It can recall past conversations per user.<br>
+Makes Decisions 🧩 → OpenAI processes messages and generates responses dynamically.<br>
+Acts Autonomously 🤖 → The system functions on its own without direct control.<br>
 
 Lets get started!
 
