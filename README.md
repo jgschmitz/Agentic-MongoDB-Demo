@@ -64,7 +64,7 @@ Lets run the API
 ```
 uvicorn main:app --reload
 ```
-Now that its running to test the API in the browswer
+Now that its running to test the API in the browser
 ```
 Browser (Swagger UI) Go to:
 📍 http://127.0.0.1:8000/docs (Interactive API docs)
