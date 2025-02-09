@@ -23,7 +23,7 @@ import openai
 import os
 
 # Load OpenAI API Key
-openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = "OPENAI_API_KEY"
 
 # MongoDB Setup
 client = MongoClient("mongodb://localhost:27017")
