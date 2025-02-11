@@ -69,6 +69,13 @@ Now that its running to test the API in the browser
 Browser (Swagger UI) Go to:
 📍 http://127.0.0.1:8000/docs (Interactive API docs)
 ```
+Put this command in the post
+```
+{
+  "user_id": "123",
+  "message": "Tell me about Porsche at LeMans?"
+}
+```
 or you can use cURL from CLI
 ```
 curl -X 'POST' \
