@@ -73,7 +73,7 @@ Put this command in the post
 ```
 {
   "user_id": "123",
-  "message": "Tell me about Porsche at LeMans?"
+  "message": "Hello how are you?"
 }
 ```
 or you can use cURL from CLI
